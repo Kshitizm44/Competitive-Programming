@@ -1,0 +1,63 @@
+#include<stdio.h>
+main()
+{
+	int T,I,N,Q,G,i,h,t;
+	scanf("%d",&T);
+	while(T--)
+	{
+		scanf("%d",&G);
+		while(G--)
+	{
+		
+		scanf("%d %d %d",&I,&N,&Q);
+		if(I==1)
+		{
+	    if(N%2==0)
+		{
+			h=t=N/2;
+	    }	
+	    else
+	    {
+	    	h=N/2;
+	    	t=N-h;
+		}
+		
+		if(Q==1)
+		{
+			printf("\n %d",h);
+		//	break;
+		}
+		if(Q==2)
+		{
+			printf("\n %d",t);
+		//	break;
+		}
+	    }
+	    
+	    
+	    if(I==2)
+	    {
+	    	if(N%2==0)
+	    	{
+	    		h=t=N/2;
+			}
+			else
+			{
+				t=N/2;
+				h=N-t;
+			}
+				if(Q==1)
+		       {
+			printf("\n %d",h);
+			//break;
+		       }
+		if(Q==2)
+		{
+			printf("\n %d",t);
+			//break;
+		}
+		}
+	}
+	}
+	return 0;
+}
